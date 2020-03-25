@@ -87,6 +87,13 @@ function delete_hero(row) {
     load_table();
 }
 
+function copy_to_clipboard() {
+    var report = document.getElementById("report");
+    report.select();
+    document.execCommand("copy");
+}
+
+
 function save_template() {
     const template = document.getElementById("template").value;
     localStorage.setItem("template", template);
@@ -110,6 +117,7 @@ function on_load() {
 
 document.getElementById("btn_save_template").addEventListener("click", save_template);
 document.getElementById("btn_add_hero").addEventListener("click", add_hero);
+document.getElementById("btn_copy").addEventListener("click", copy_to_clipboard);
 window.onload = on_load;
 
 $(document).ready(function(){

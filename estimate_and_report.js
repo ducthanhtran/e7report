@@ -89,13 +89,18 @@ function _construct_report_data(enemy_id, speeds, hp, artifact_selected_index) {
         artifact_name = ARTIFACTS.find(a => a.id == artifact_id).name;
     }
 
+    var has_counter = document.getElementById(`enemy_${i}_counter`).checked;
+    var has_immunity = document.getElementById(`enemy_${i}_immunity`).checked;
+
     return {
         enemy_name: HEROES.find(h => h.id == enemy_id).name,
         speeds: "[" + speeds.join(', ') + "]",
         max_speed: max_speed,
         avg_speed: avg_speed,
         hp: hp,
-        artifact_name: artifact_name
+        artifact_name: artifact_name,
+        has_counter: has_counter,
+        has_immunity: has_immunity
     };
 }
 
@@ -126,6 +131,18 @@ function build_report(speeds) {
                             .replace('[MAX-SPD]', d.max_speed)
                             .replace('[AVG-SPD]', d.avg_speed)
                             .replace('[NAME]', d.enemy_name);
+                if (d.has_counter) {
+                    line = line.replace('[COUNTER]', '**Counter-Set**');
+                } else {
+                    line = line.replace('[COUNTER]', '');
+                }
+
+                if (d.has_immunity) {
+                    line = line.replace('[IMMUNITY]', '**Immunity**');
+                } else {
+                    line = line.replace('[IMMUNITY]', '');
+                }
+
                 const report = document.getElementById("report");
                 report.value += line + "\n";
            }

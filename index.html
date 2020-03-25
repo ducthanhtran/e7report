@@ -88,6 +88,8 @@
                             <li class="list-group-item"><p class="text-primary">[MAX-SPD] Maximum estimated speed</p></li>
                             <li class="list-group-item"><p class="text-primary">[AVG-SPD] Averaged estimated speed</p></li>
                             <li class="list-group-item"><p class="text-primary">[ART] Artifact</p></li>
+                            <li class="list-group-item"><p class="text-primary">[COUNTER] Counter set</p></li>
+                            <li class="list-group-item"><p class="text-primary">[IMMUNITY] Immunity set</p></li>
                           </ul>
                         </div>
                       </div>
@@ -172,9 +174,9 @@
                         </div>
                         <div class="col-1">
                             <div class="row"><img src="counter.png" class="rounded" alt="..."></div>
-                            <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_1_immunity"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_2_immunity"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_3_immunity"></div></div>
+                            <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_1_counter"></div></div>
+                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_2_counter"></div></div>
+                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_3_counter"></div></div>
                         </div>
                     </div>
                 </div>
@@ -247,9 +249,9 @@
                     </div>
                     <div class="col-1">
                         <div class="row"><img src="counter.png" class="rounded" alt="..."></div>
-                        <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_4_immunity"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_5_immunity"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_6_immunity"></div></div>
+                        <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_4_counter"></div></div>
+                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_5_counter"></div></div>
+                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_6_counter"></div></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +273,7 @@
         <div class="collapse" id="result_collapse">
             <div id="report_info" class="card card-body">
                 <div class="jumbotron">
-                <textarea class="form-control" id="report" rows="5" placeholder="formatted report"></textarea>
+                <textarea class="form-control" id="report" rows="10" placeholder="formatted report"></textarea>
                 <button id="btn_copy" type="submit" class="btn btn-primary">Copy to clipboard</button>
             </div>
         </div>
