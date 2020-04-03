@@ -8,6 +8,14 @@ const ARTIFACTS = [
         name: "Adamant Shield",
     },
     {
+        id: "alabastron",
+        name: "Alabastron"
+    }
+    {
+        id: "alencinoxs_wrath",
+        name: "Alencinox’s Wrath"
+    }
+    {
         id: "alexas_basket",
         name: "Alexa's Basket",
     },
@@ -22,6 +30,10 @@ const ARTIFACTS = [
     {
         id: "ancient_sheath",
         name: "Ancient Sheath",
+    },
+    {
+        id: "andres_crossbow",
+        name: "Andre's Crossbow"
     },
     {
         id: "aqua_rose",
@@ -40,9 +52,21 @@ const ARTIFACTS = [
         name: "Aurius",
     },
     {
+        id: "barthezs_orbuculum",
+        name: "Barthez's Orbuculum"
+    },
+    {
         id: "bastion_of_perlutia",
         name: "Bastion of Perlutia",
     },
+    {
+        id: "black_hand_of_the_goddess"
+        name: "Black Hand of the Goddess"
+    },
+    {
+        id: "blessings_of_camaraderie",
+        name: "Blessings of Camaraderie"
+    }
     {
         id: "bloodstone",
         name: "Bloodstone",
@@ -108,6 +132,10 @@ const ARTIFACTS = [
         name: "Dust Devil",
     },
     {
+        id: "dux_noctis",
+        name: "Dux Noctis"
+    },
+    {
         id: "egg_of_delusion",
         name: "Egg of Delusion",
     },
@@ -144,8 +172,16 @@ const ARTIFACTS = [
         name: "Goblin's Lamp",
     },
     {
+        id: "golden_cocoa_cookie",
+        name: "Golden Cocoa Cookie"
+    },
+    {
         id: "grail_of_blood",
         name: "Grail of Blood",
+    },
+    {
+        id: "guiding_light",
+        name: "Guiding Light"
     },
     {
         id: "hell_cutter",
@@ -200,6 +236,10 @@ const ARTIFACTS = [
         name: "Magaraha's Tome",
     },
     {
+        id: "merciless_glutton",
+        name: "Merciless Glutton"
+    },
+    {
         id: "midnight_bloom",
         name: "Midnight Bloom",
     },
@@ -214,6 +254,10 @@ const ARTIFACTS = [
     {
         id: "necro_and_undine",
         name: "Necro & Undine",
+    },
+    {
+        id: "new_year_cookies",
+        name: "New Year Cookies"
     },
     {
         id: "noble_oath",
@@ -280,6 +324,10 @@ const ARTIFACTS = [
         name: "Sashe Ithanes",
     },
     {
+        id: "sepulcrum",
+        name: "Sepulcrum"
+    },
+    {
         id: "shepherds_of_chaos",
         name: "Shepherds of Chaos",
     },
@@ -290,6 +338,10 @@ const ARTIFACTS = [
     {
         id: "sigurd_scythe",
         name: "Sigurd Scythe",
+    },
+    {
+        id: "silver_rain",
+        name: "Silver rain"
     },
     {
         id: "sira_ren",
@@ -306,6 +358,14 @@ const ARTIFACTS = [
     {
         id: "spooky_solayu_stories",
         name: "Spooky Solayu Stories",
+    },
+    {
+        id: "steadfast_gatekeeper",
+        name: "Steadfast Gatekeeper"
+    },
+    {
+        id: "stella_harpa",
+        name: "Stella Harpa"
     },
     {
         id: "strak_gauntlet",
@@ -346,6 +406,14 @@ const ARTIFACTS = [
     {
         id: "uberiuss_tooth",
         name: "Uberius's Tooth",
+    },
+    {
+        id: "unfading_memories",
+        name: "Unfading Memories"
+    },
+    {
+        id: "victorious_flag",
+        name: "Victorious Flag"
     },
     {
         id: "violet_talisman",

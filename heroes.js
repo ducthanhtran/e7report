@@ -24,6 +24,10 @@ const HEROES = [
         name: "Alexa"
     },
     {
+        id: "all_rounder_wanda",
+        name: "All-Rounder Wanda"
+    },
+    {
         id: "ambitious_tywin",
         name: "Ambitious Tywin"
     },
@@ -142,6 +146,10 @@ const HEROES = [
     {
         id: "celestial_mercedes",
         name: "Celestial Mercedes"
+    },
+    {
+        id: "cerise",
+        name: "Cerise"
     },
     {
         id: "cermia",
@@ -344,6 +352,10 @@ const HEROES = [
         name: "Karin"
     },
     {
+        id: "kawerik",
+        name: "Kawerik"
+    },
+    {
         id: "kayron",
         name: "Kayron"
     },
@@ -404,6 +416,10 @@ const HEROES = [
         name: "Lilibet"
     },
     {
+        id: "little_queen_charlotte",
+        name: "Little Queen Charlotte"
+    },
+    {
         id: "lorina",
         name: "Lorina"
     },
@@ -450,6 +466,10 @@ const HEROES = [
     {
         id: "mercedes",
         name: "Mercedes"
+    },
+    {
+        id: "mercenary_helga",
+        name: "Mercenary Helga"
     },
     {
         id: "mirsa",
@@ -528,6 +548,10 @@ const HEROES = [
         name: "Roaming Warrior Leo"
     },
     {
+        id: "roana",
+        name: "Roana"
+    },
+    {
         id: "romann",
         name: "Romann"
     },
@@ -584,6 +608,10 @@ const HEROES = [
         name: "Silver Blade Aramintha"
     },
     {
+        id: "sinful_angelica",
+        name: "Sinful Angelica"
+    },
+    {
         id: "sol",
         name: "Sol"
     },
@@ -594,6 +622,10 @@ const HEROES = [
     {
         id: "specter_tenebria",
         name: "Specter Tenebria"
+    },
+    {
+        id: "straze",
+        name: "Straze"
     },
     {
         id: "surin",
@@ -614,6 +646,10 @@ const HEROES = [
     {
         id: "taranor_royal_guard",
         name: "Taranor Royal Guard"
+    },
+    {
+        id: "tempest_surin",
+        name: "Tempest Surin"
     },
     {
         id: "tenebria",
