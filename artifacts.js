@@ -10,11 +10,11 @@ const ARTIFACTS = [
     {
         id: "alabastron",
         name: "Alabastron"
-    }
+    },
     {
         id: "alencinoxs_wrath",
         name: "Alencinox’s Wrath"
-    }
+    },
     {
         id: "alexas_basket",
         name: "Alexa's Basket",
@@ -60,13 +60,13 @@ const ARTIFACTS = [
         name: "Bastion of Perlutia",
     },
     {
-        id: "black_hand_of_the_goddess"
+        id: "black_hand_of_the_goddess",
         name: "Black Hand of the Goddess"
     },
     {
         id: "blessings_of_camaraderie",
         name: "Blessings of Camaraderie"
-    }
+    },
     {
         id: "bloodstone",
         name: "Bloodstone",
