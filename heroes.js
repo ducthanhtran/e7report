@@ -8,6 +8,10 @@ const HEROES = [
         name: "Adlay"
     },
     {
+        id: "adventurer_ras",
+        name: "Adventurer Ras"
+    },
+    {
         id: "ains",
         name: "Ains"
     },
@@ -114,6 +118,10 @@ const HEROES = [
     {
         id: "blood_blade_karin",
         name: "Blood Blade Karin"
+    },
+    {
+        id: "blood_moon_haste",
+        name: "Blood Moon Haste"
     },
     {
         id: "butcher_corps_inquisitor",
@@ -266,6 +274,10 @@ const HEROES = [
     {
         id: "enott",
         name: "Enott"
+    },
+    {
+        id: "elphelt_valentine",
+        name: "Elphelt Valentine"
     },
     {
         id: "faithless_lidica",

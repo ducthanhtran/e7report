@@ -404,6 +404,10 @@ const ARTIFACTS = [
         name: "Torn Sleeve",
     },
     {
+        id: "touch_of_rekos",
+        name: "Touch of Rekos"
+    },
+    {
         id: "uberiuss_tooth",
         name: "Uberius's Tooth",
     },
