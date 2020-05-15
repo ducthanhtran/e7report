@@ -252,6 +252,10 @@ const ARTIFACTS = [
         name: "Moonlight Dreamblade",
     },
     {
+        id: "ms_confille",
+        name: "Ms. Confille"
+    },
+    {
         id: "necro_and_undine",
         name: "Necro & Undine",
     },
