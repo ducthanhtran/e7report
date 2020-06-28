@@ -96,6 +96,10 @@ const ARTIFACTS = [
         name: "Chatty",
     },
     {
+        id: "cradle_of_life",
+        name: "Cradle of Life",
+    },
+    {
         id: "creation_and_destruction",
         name: "Creation & Destruction",
     },
@@ -118,6 +122,10 @@ const ARTIFACTS = [
     {
         id: "dignus_orb",
         name: "Dignus Orb",
+    },
+    {
+        id: "doctors_bag",
+        name: "Doctor's Bag",
     },
     {
         id: "draco_plate",
@@ -162,6 +170,10 @@ const ARTIFACTS = [
     {
         id: "exorcists_tonfa",
         name: "Exorcist's Tonfa",
+    },
+    {
+        id: "flower_shower",
+        name: "Flower Shower",
     },
     {
         id: "forest_totem",
@@ -326,6 +338,10 @@ const ARTIFACTS = [
     {
         id: "sashe_ithanes",
         name: "Sashe Ithanes",
+    },
+    {
+        id: "secret_art_secret_sword",
+        name: "Secret Art - Secret Sword",
     },
     {
         id: "sepulcrum",
