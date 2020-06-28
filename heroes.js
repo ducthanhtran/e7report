@@ -156,6 +156,10 @@ const HEROES = [
         name: "Celestial Mercedes"
     },
     {
+        id: "celine",
+        name: "Celine",
+    },
+    {
         id: "cerise",
         name: "Cerise"
     },
@@ -400,6 +404,10 @@ const HEROES = [
         name: "Kitty Clarissa"
     },
     {
+        id: "kizuna_ai",
+        name: "Kizuna Ai",
+    },
+    {
         id: "kluri",
         name: "Kluri"
     },
@@ -534,6 +542,10 @@ const HEROES = [
     {
         id: "ray",
         Name: "Ray"
+    },
+    {
+        id: "remnant_violet",
+        name: "Remnant Violet",
     },
     {
         id: "requiemroar",
