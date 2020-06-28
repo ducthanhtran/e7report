@@ -300,6 +300,10 @@ const HEROES = [
         name: "Fighter Maya"
     },
     {
+        id: "free_spirit_tiera",
+        name: "Free Spirit Tiera"
+    },
+    {
         id: "furious",
         name: "Furious"
     },
