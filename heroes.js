@@ -344,6 +344,10 @@ const HEROES = [
         name: "Helga"
     },
     {
+        id: "holiday_yufine",
+        name: "Holiday Yufine",
+    },
+    {
         id: "hurado",
         name: "Hurado"
     },
