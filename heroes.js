@@ -124,6 +124,10 @@ const HEROES = [
         name: "Blood Moon Haste"
     },
     {
+        id: "briar_witch_iseria",
+        name: "Briar Witch Iseria",
+    },
+    {
         id: "butcher_corps_inquisitor",
         name: "Butcher Corps Inquisitor"
     },
