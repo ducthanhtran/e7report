@@ -512,6 +512,10 @@ const HEROES = [
         name: "Mucacha"
     },
     {
+        id: "mui",
+        name: "Mui",
+    },
+    {
         id: "nemunas",
         name: "Nemunas"
     },
