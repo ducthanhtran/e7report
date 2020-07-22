@@ -92,6 +92,10 @@ const ARTIFACTS = [
         name: "Celestine",
     },
     {
+        id: "circus_fantasia",
+        name: "Circus Fantasia",
+    },
+    {
         id: "chatty",
         name: "Chatty",
     },
