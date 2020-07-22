@@ -96,6 +96,10 @@ const ARTIFACTS = [
         name: "Circus Fantasia",
     },
     {
+        id: "champions_trophy",
+        name: "Champion's Trophy",
+    },
+    {
         id: "chatty",
         name: "Chatty",
     },
