@@ -412,6 +412,10 @@ const ARTIFACTS = [
         name: "Sword of the Morning",
     },
     {
+        id: "super_duper_water_gun_shooter",
+        name: "Super Duper Water Gun Shooter",
+    },
+    {
         id: "tagehels_ancient_book",
         name: "Tagehel's Ancient Book",
     },
