@@ -332,6 +332,10 @@ const ARTIFACTS = [
         name: "Rhianna & Luciella",
     },
     {
+        id: "rise_of_a_monarch",
+        name: "Rise of a Monarch",
+    },
+    {
         id: "rod_of_amaryllis",
         name: "Rod of Amaryllis",
     },
