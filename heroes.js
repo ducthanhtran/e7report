@@ -264,6 +264,10 @@ const HEROES = [
         name: "Dizzy"
     },
     {
+        id: "doll_maker_pearlhorizon",
+        name: "Doll Maker Pearlhorizon",
+    },
+    {
         id: "dominiel",
         name: "Dominiel"
     },
