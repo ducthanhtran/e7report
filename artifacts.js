@@ -384,6 +384,10 @@ const ARTIFACTS = [
         name: "Sira-Ren",
     },
     {
+        id: "snow_crystal",
+        name: "Snow Crystal",
+    },
+    {
         id: "song_of_stars",
         name: "Song of Stars",
     },
