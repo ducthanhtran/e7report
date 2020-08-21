@@ -116,6 +116,10 @@ const ARTIFACTS = [
         name: "Crimson Seed",
     },
     {
+        id: "crown_of_glory",
+        name: "Crown of Glory",
+    },
+    {
         id: "cursed_compass",
         name: "Cursed Compass",
     },
