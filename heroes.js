@@ -200,6 +200,10 @@ const HEROES = [
         name: "Chloe"
     },
     {
+        id: "choux",
+        name: "Choux",
+    },
+    {
         id: "church_of_ilryos_axe",
         name: "Church of Ilryos Axe"
     },
