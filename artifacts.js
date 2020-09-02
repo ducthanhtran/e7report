@@ -372,6 +372,10 @@ const ARTIFACTS = [
         name: "Shepherds of Chaos",
     },
     {
+        id: "shepherd_of_the_hollow",
+        name: "Shepherd of the Hollow"
+    },
+    {
         id: "shimadra_staff",
         name: "Shimadra Staff",
     },
