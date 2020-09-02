@@ -52,6 +52,10 @@ const ARTIFACTS = [
         name: "Aurius",
     },
     {
+        id: "a_little_queens_huge_crown",
+        name: "A Little Queen's Huge Crown"
+    },
+    {
         id: "barthezs_orbuculum",
         name: "Barthez's Orbuculum"
     },
