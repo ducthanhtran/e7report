@@ -452,6 +452,10 @@ const ARTIFACTS = [
         name: "Touch of Rekos"
     },
     {
+        id: "to_a_new_world",
+        name: "To a New World",
+    },
+    {
         id: "uberiuss_tooth",
         name: "Uberius's Tooth",
     },
