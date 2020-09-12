@@ -4,36 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>E7 Speed Estimator and Report Builder</title>
-        <!-- Latest compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="bootstrap-select.min.css">
-        <link rel="stylesheet" href="bootstrap.css">
+        <title>E7 GW Report</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
         <style>.tooltip-inner { max-width: 1000px !important; }</style>
     </head>    
 <body>
     <div class="container">
-
-        <div class="row">
-            <h1>E7 Speed Estimator and Report Builder</h1>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal_add_hero">Add Hero</button>
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_template">Report Template</button>
-                <small class="text-muted">Last update: 2 September 2020 (Added Last Rider Krau)</small>
-                <table class="table table-sm table-hover" id="tbl">
-                    <thread>
-                        <th scope="col">Hero</th>
-                        <th scope="col">Note</th>
-                        <th scope="col">Speed</th>
-                        <th scope="col">Actions</th>
-                    </thread>
-                    <tbody id="heroes_tbl"></tbody>
-                </table>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">E7 GW Report</a>
+            <form class="form-inline">
+                <button type="button" class="btn btn-outline-success my-2 my-sm-0 mr-1" data-toggle="modal" data-target="#modal_add_hero">Add Hero</button>
+                <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target="#modal_template">Report Template</button>
+            </form>
+            <span class="navbar-text ml-2">Last update: 09 September 2020</span>
+            <div class="navbar-nav ml-auto">
+            <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="dark-mode-switch">
+                  <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
             </div>
-        </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <table class="table table-sm table-hover" id="tbl">
+            <thread>
+                <th scope="col">Hero</th>
+                <th scope="col">Note</th>
+                <th scope="col">Speed</th>
+                <th scope="col">Actions</th>
+            </thread>
+            <tbody id="heroes_tbl"></tbody>
+        </table>
 
         <div class="modal fade" id="modal_add_hero" tabindex="-1" role="dialog" aria-labelledby="modal_add_hero_label" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -56,7 +60,7 @@
                         </div>
                         <div class="col">
                             <div class="row"><h5>Speed</h5></div>
-                            <div class="row"><input id="hero_add_speed" type="number" class="form-control"></div>
+                            <div class="row"><input id="hero_add_speed" type="number" min="0" class="form-control"></div>
                         </div>
                     </div>
                 </div>
@@ -105,188 +109,290 @@
             </div>
             </div>
         </div>
-
-        <div class="form-group">
+    </div>
+    
+    <div class="container">
+        <hr class="mt-5 mb-5">
+    </div>
+    
+    <div class="container">
         <div class="row">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="row"><h6>Heroes</h6></div>
-                            <div class="row"><select id="hero_1" class="selectpicker" title="Hero 1" data-live-search="true" data-width="150px"></select></div>
-                            <div class="row"><select id="hero_2" class="selectpicker" title="Hero 2" data-live-search="true" data-width="150px"></select></div>
-                            <div class="row"><select id="hero_3" class="selectpicker" title="Hero 3" data-live-search="true" data-width="150px"></select></div>
+            <div class="col-3">
+                <div class="input-group mb-3">
+                    <input id="enemy_name" type="text" placeholder="Enemy name" aria-label="Enemy name" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <fieldset>
+            <legend>Round 1</legend>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_1" class="selectpicker" title="Hero 1" data-live-search="true" data-width="200px" showSubtext="true"></select>
+                        <input id='hero_1_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_1_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="input-group">
+                        <select id="enemy_1" class="selectpicker" title="Enemy 1" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_1_artifact' class="selectpicker" title="Artifact 1" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_1_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_1_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-7 mb-3">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_1_immunity_set">
+                             <label class="custom-control-label" for="enemy_1_immunity_set">Immunity-Set</label>
                         </div>
-                        <div class="col-3">
-                            <div class="row"><h6>Speed</h6></div>
-                            <div class="row"><input id='hero_1_speed' type="number" class="form-control"></div>
-                            <div class="row"><input id='hero_2_speed' type="number" class="form-control"></div>
-                            <div class="row"><input id='hero_3_speed' type="number" class="form-control"></div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_1_counter_set" name="enemy_1_gear_set_main">
+                             <label class="custom-control-label" for="enemy_1_counter_set">Counter-Set</label>
                         </div>
-                        <div class="col-3">
-                            <div class="row"><h6>CR</h6></div>
-                            <div class="row"><input id='hero_1_cr' type="number" class="form-control"></div>
-                            <div class="row"><input id='hero_2_cr' type="number" class="form-control"></div>
-                            <div class="row"><input id='hero_3_cr' type="number" class="form-control"></div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_1_lifesteal_set" name="enemy_1_gear_set_main">
+                             <label class="custom-control-label" for="enemy_1_lifesteal_set">Lifesteal-Set</label>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_2" class="selectpicker" title="Hero 2" data-live-search="true" data-width="200px"></select>
+                        <input id='hero_2_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_2_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="input-group">
+                        <select id="enemy_2" class="selectpicker" title="Enemy 2" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_2_artifact' class="selectpicker" title="Artifact 1" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_2_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_2_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-7 mb-3">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_2_immunity_set">
+                             <label class="custom-control-label" for="enemy_2_immunity_set">Immunity-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_2_counter_set" name="enemy_2_gear_set_main">
+                             <label class="custom-control-label" for="enemy_2_counter_set">Counter-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_2_lifesteal_set" name="enemy_2_gear_set_main">
+                             <label class="custom-control-label" for="enemy_2_lifesteal_set">Lifesteal-Set</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_3" class="selectpicker" title="Hero 3" data-live-search="true" data-width="200px"></select>
+                        <input id='hero_3_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_3_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="input-group">
+                        <select id="enemy_3" class="selectpicker" title="Enemy 3" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_3_artifact' class="selectpicker" title="Artifact 1" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_3_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_3_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-7 mb-3">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_3_immunity_set">
+                             <label class="custom-control-label" for="enemy_3_immunity_set">Immunity-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_3_counter_set" name="enemy_3_gear_set_main">
+                             <label class="custom-control-label" for="enemy_3_counter_set">Counter-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_3_lifesteal_set" name="enemy_3_gear_set_main">
+                             <label class="custom-control-label" for="enemy_3_lifesteal_set">Lifesteal-Set</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    
+    <div class="container">
+        <fieldset>
+            <legend>Round 2</legend>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_4" class="selectpicker" title="Hero 4" data-live-search="true" data-width="200px"></select>
+                        <input id='hero_4_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_4_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
                 <div class="col">
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="row"><h6>Enemies</h6></div>
-                            <div class="row">
-                                <div class="col">
-                                    <select id="enemy_1" class="selectpicker" title="Enemy 1" data-live-search="true" data-width="150px"></select>
-                                    <select id='enemy_1_artifact' class="selectpicker" title="Artifact 1" data-live-search="true" data-width="150px"></select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <select id="enemy_2" class="selectpicker" title="Enemy 2" data-live-search="true" data-width="150px"></select>
-                                    <select id='enemy_2_artifact' class="selectpicker" title="Artifact 2" data-live-search="true" data-width="150px"></select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <select id="enemy_3" class="selectpicker" title="Enemy 3" data-live-search="true" data-width="150px"></select>
-                                    <select id='enemy_3_artifact' class="selectpicker" title="Artifact 3" data-live-search="true" data-width="150px"></select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="row"><h6>CR</h6></div>
-                            <div class="row"><input id='enemy_1_cr' type="number" class="form-control"></div>
-                            <div class="row"><input id='enemy_2_cr' type="number" class="form-control"></div>
-                            <div class="row"><input id='enemy_3_cr' type="number" class="form-control"></div>
-                        </div>
-                        <div class="col-2">
-                            <div class="row"><h6>HP [K]</h6></div>
-                            <div class="row"><input id='enemy_1_hp' type="number" class="form-control" step=0.01></div>
-                            <div class="row"><input id='enemy_2_hp' type="number" class="form-control" step=0.01></div>
-                            <div class="row"><input id='enemy_3_hp' type="number" class="form-control" step=0.01></div>
-                        </div>
-                        <div class="col-1">
-                            <div class="row"><img src="immunity.png" class="rounded" alt="..."></div>
-                            <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_1_immunity"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_2_immunity"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_3_immunity"></div></div>
-                        </div>
-                        <div class="col-1">
-                            <div class="row"><img src="counter.png" class="rounded" alt="..."></div>
-                            <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_1_counter"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_2_counter"></div></div>
-                            <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_3_counter"></div></div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!-- round 2 -->
-        <div class="row">
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="row"><h6>Heroes</h6></div>
-                        <div class="row"><select id="hero_4" class="selectpicker" title="Hero 4" data-live-search="true" data-width="150px"></select></div>
-                        <div class="row"><select id="hero_5" class="selectpicker" title="Hero 5" data-live-search="true" data-width="150px"></select></div>
-                        <div class="row"><select id="hero_6" class="selectpicker" title="Hero 6" data-live-search="true" data-width="150px"></select></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="row"><h6>Speed</h6></div>
-                        <div class="row"><input id='hero_4_speed' type="number" class="form-control"></div>
-                        <div class="row"><input id='hero_5_speed' type="number" class="form-control"></div>
-                        <div class="row"><input id='hero_6_speed' type="number" class="form-control"></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="row"><h6>CR</h6></div>
-                        <div class="row"><input id='hero_4_cr' type="number" class="form-control"></div>
-                        <div class="row"><input id='hero_5_cr' type="number" class="form-control"></div>
-                        <div class="row"><input id='hero_6_cr' type="number" class="form-control"></div>
+                    <div class="input-group ">
+                        <select id="enemy_4" class="selectpicker" title="Enemy 4" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_4_artifact' class="selectpicker" title="Artifact 4" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_4_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_4_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
                     </div>
                 </div>
             </div>
-
-            <div class="col">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="row"><h6>Enemies</h6></div>
-                        <div class="row">
-                            <div class="col">
-                                <select id="enemy_4" class="selectpicker" title="Enemy 4" data-live-search="true" data-width="150px"></select>
-                                <select id='enemy_4_artifact' class="selectpicker" title="Artifact 4" data-live-search="true" data-width="150px"></select>
-                            </div>
+            <div class="row mb-3">
+                <div class="col-5"></div>
+                <div class="col-7">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_4_immunity_set">
+                             <label class="custom-control-label" for="enemy_4_immunity_set">Immunity-Set</label>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <select id="enemy_5" class="selectpicker" title="Enemy 5" data-live-search="true" data-width="150px"></select>
-                                <select id='enemy_5_artifact' class="selectpicker" title="Artifact 5" data-live-search="true" data-width="150px"></select>
-                            </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_4_counter_set" name="enemy_4_gear_set_main">
+                             <label class="custom-control-label" for="enemy_4_counter_set">Counter-Set</label>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <select id="enemy_6" class="selectpicker" title="Enemy 6" data-live-search="true" data-width="150px"></select>
-                                <select id='enemy_6_artifact' class="selectpicker" title="Artifact 6" data-live-search="true" data-width="150px"></select>
-                            </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_4_lifesteal_set" name="enemy_4_gear_set_main">
+                             <label class="custom-control-label" for="enemy_4_lifesteal_set">Lifesteal-Set</label>
                         </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="row"><h6>CR</h6></div>
-                        <div class="row"><input id='enemy_4_cr' type="number" class="form-control"></div>
-                        <div class="row"><input id='enemy_5_cr' type="number" class="form-control"></div>
-                        <div class="row"><input id='enemy_6_cr' type="number" class="form-control"></div>
-                    </div>
-                    <div class="col-2">
-                        <div class="row"><h6>HP [K]</h6></div>
-                        <div class="row"><input id='enemy_4_hp' type="number" class="form-control" step=0.01></div>
-                        <div class="row"><input id='enemy_5_hp' type="number" class="form-control" step=0.01></div>
-                        <div class="row"><input id='enemy_6_hp' type="number" class="form-control" step=0.01></div>
-                    </div>
-                    <div class="col-1">
-                        <div class="row"><img src="immunity.png" class="rounded" alt="..."></div>
-                        <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_4_immunity"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_5_immunity"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_6_immunity"></div></div>
-                    </div>
-                    <div class="col-1">
-                        <div class="row"><img src="counter.png" class="rounded" alt="..."></div>
-                        <div class="row"><div class="ml-2 mt-2"><input type="checkbox" id="enemy_4_counter"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_5_counter"></div></div>
-                        <div class="row"><div class="ml-2 mt-3"><input type="checkbox" id="enemy_6_counter"></div></div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-
-        <div class="row">
-            <button id="btn_estimate_and_report" type="submit" class="btn btn-light">Estimate+Report</button>
-        </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_5" class="selectpicker" title="Hero 5" data-live-search="true" data-width="200px"></select>
+                        <input id='hero_5_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_5_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="input-group">
+                        <select id="enemy_5" class="selectpicker" title="Enemy 5" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_5_artifact' class="selectpicker" title="Artifact 5" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_5_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_5_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5"></div>
+                <div class="col-7">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_5_immunity_set">
+                             <label class="custom-control-label" for="enemy_5_immunity_set">Immunity-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_5_counter_set" name="enemy_5_gear_set_main">
+                             <label class="custom-control-label" for="enemy_5_counter_set">Counter-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_5_lifesteal_set" name="enemy_5_gear_set_main">
+                             <label class="custom-control-label" for="enemy_5_lifesteal_set">Lifesteal-Set</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group">
+                        <select id="hero_6" class="selectpicker" title="Hero 6" data-live-search="true" data-width="200px"></select>
+                        <input id='hero_6_speed' type="number" min="0" placeholder="Opt. Speed" class="form-control">
+                        <input id='hero_6_cr' type="number" min="0" placeholder="CR" class="form-control">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="input-group ">
+                        <select id="enemy_6" class="selectpicker" title="Enemy 3" data-live-search="true" data-width="200px"></select>
+                        <select id='enemy_6_artifact' class="selectpicker" title="Artifact 6" data-live-search="true" data-width="200px"></select>
+                        <input id='enemy_6_cr' type="number" min="0" placeholder="CR" class="form-control">
+                        <input id='enemy_6_hp' type="number" min="0" placeholder="HP[K]" class="form-control" step=0.01>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5"></div>
+                <div class="col-7">
+                    <div class="form-check form-check-inline">
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_6_immunity_set">
+                             <label class="custom-control-label" for="enemy_6_immunity_set">Immunity-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_6_counter_set" name="enemy_6_gear_set_main">
+                             <label class="custom-control-label" for="enemy_6_counter_set">Counter-Set</label>
+                        </div>
+                        <div class="custom-control custom-checkbox form-control-sm custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="enemy_6_lifesteal_set" name="enemy_6_gear_set_main">
+                             <label class="custom-control-label" for="enemy_6_lifesteal_set">Lifesteal-Set</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
     </div>
 
     <div class="container" style="margin-top: 25px">
-        <div class="collapse" id="result_collapse">
-            <div id="result" class="card card-body"></div>
+        <button id="btn_estimate_and_report" type="submit" class="btn btn-outline-primary">Report</button>
+        
+        <div class="collapse collapse-error" id="error_collapse">
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
         </div>
     </div>
-
+    
     <div class="container" style="margin-top: 25px">
-        <div class="collapse" id="result_collapse">
+        <div class="collapse collapse-result" id="result_collapse">
+            <div class="card">
+                <div class="card-body" id="result">
+                    <h5 class="card-title">Speed estimations</h5>
+                    <div id="result" class="card card-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-top: 25px">
+        <div class="collapse collapse-result" id="result_collapse">
             <div id="report_info" class="card card-body">
                 <div class="jumbotron">
-                <textarea class="form-control" id="report" rows="10" placeholder="formatted report"></textarea>
-                <button id="btn_copy" type="submit" class="btn btn-primary">Copy to clipboard</button>
+                    <textarea class="form-control" id="report" rows="10" placeholder="formatted report"></textarea>
+                    <button id="btn_copy" type="submit" class="btn btn-primary">Copy to clipboard</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js" crossorigin="anonymous"></script>
     
     <script src="heroes.js"></script>
     <script src="artifacts.js"></script>
-    <script src="util.js"></script>
+    <script src="index.js"></script>
     <script src="estimate_and_report.js"></script>
 </body>
 </html>

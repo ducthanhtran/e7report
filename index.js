@@ -58,20 +58,47 @@ function _clear() {
 
 function load_table() {
     _clear();
-    const heroes = sort_heroes(JSON.parse(localStorage.getItem("heroes")));
+    const own_heroes = sort_heroes(JSON.parse(localStorage.getItem("heroes")));
 
     const table = document.getElementById("heroes_tbl");
-    for (const o of heroes) {
+    for (const o of own_heroes) {
         $(table).append(`<tr id="tbl_${o.key}">
                 <td>${o.hero_name}</td>
                 <td>${o.note}
                 <td>${o.speed}</td>
-                <td><button type="button" class="btn btn-danger" onClick=delete_hero(this)>Delete</button></tr>`)
+                <td><button type="button" class="btn btn-outline-danger" onClick=delete_hero(this)>Delete</button></tr>`);
     }
 
     for (var i=1; i <= 6; ++i) {
         const select = document.getElementById(`hero_${i}`);
-        heroes.forEach(function(o) { select.add(new Option(o.hero_name + ' | ' + o.note, o.key)); });
+        
+        // Owned heroes from table
+        let owned_group = document.createElement("optgroup");
+        owned_group.classList = "owned_heroes";
+        let owned_group_label = document.createAttribute("label");
+        owned_group_label.value = "Owned Heroes";
+        owned_group.setAttributeNode(owned_group_label);
+        
+        own_heroes.forEach(function(h) {
+                                        $(owned_group).append(`<option value="${h.key}" data-subtext="${h.note}">${h.hero_name}</option>`);
+                                       }
+        );
+        $(select).append(owned_group);
+        
+        $(select).append('<option data-divider="true"></option>');
+        
+        // Unnamed Hero - used for speed computations only
+        let other_group = document.createElement("optgroup");
+        other_group.classList = "other_heroes";
+        let other_group_label = document.createAttribute("label");
+        other_group_label.value = "Other";
+        other_group.setAttributeNode(other_group_label);
+        
+        $(other_group).append(`<option value="unnamed">Unnamed Hero ${i}</option>`);
+        
+        $(select).append(other_group);
+        
+        $(select).selectpicker('refresh');
     }
 }
 
@@ -109,12 +136,32 @@ function load_template() {
 }
 
 
+// Dark mode
+function initTheme() {
+    var darkModeSelected = localStorage.getItem('dark-mode') != null;
+    document.getElementById('dark-mode-switch').checked = darkModeSelected;
+    darkModeSelected ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+}
+
+function themeChange() { 
+    var themeSwitch = document.getElementById('dark-mode-switch');
+    if (themeSwitch.checked) {
+        document.body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('dark-mode', '');
+    } else { 
+        document.body.removeAttribute('data-theme');
+        localStorage.removeItem('dark-mode');
+    }
+}
+
+
 function on_load() {
+    initTheme();
     load_table();
     load_template();
 }
 
-
+document.getElementById('dark-mode-switch').addEventListener('change', themeChange);
 document.getElementById("btn_save_template").addEventListener("click", save_template);
 document.getElementById("btn_add_hero").addEventListener("click", add_hero);
 document.getElementById("btn_copy").addEventListener("click", copy_to_clipboard);
