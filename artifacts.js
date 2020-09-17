@@ -116,6 +116,10 @@ const ARTIFACTS = [
         name: "Creation & Destruction",
     },
     {
+        id: "crimson_moon_of_nightmares",
+        name: "Crimson Moon of Nightmares",
+    },
+    {
         id: "crimson_seed",
         name: "Crimson Seed",
     },
@@ -486,6 +490,10 @@ const ARTIFACTS = [
     {
         id: "violet_talisman",
         name: "Violet Talisman",
+    },
+    {
+        id: "wall_of_order",
+        name: "Wall of Order",
     },
     {
         id: "waters_origin",
