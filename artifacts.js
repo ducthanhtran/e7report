@@ -352,6 +352,10 @@ const ARTIFACTS = [
         name: "Rosa Hargana",
     },
     {
+        id: "samsara_prayer_beads",
+        name: "Samsara Prayer Beads",
+    },
+    {
         id: "santa_muerte",
         name: "Santa Muerte",
     },
