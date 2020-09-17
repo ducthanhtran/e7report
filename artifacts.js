@@ -264,6 +264,10 @@ const ARTIFACTS = [
         name: "Magaraha's Tome",
     },
     {
+        id: "manica_of_control",
+        name: "Manica of Control",
+    },
+    {
         id: "merciless_glutton",
         name: "Merciless Glutton"
     },
