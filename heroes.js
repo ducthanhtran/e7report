@@ -436,6 +436,10 @@ const HEROES = [
         name: "Krau"
     },
     {
+        id: "landy",
+        name: "Landy",
+    },
+    {
         id: "last_rider_krau",
         name: "Last Rider Krau"
     },
