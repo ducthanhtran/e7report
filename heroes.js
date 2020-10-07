@@ -336,6 +336,10 @@ const HEROES = [
         name: "Gloomyrain"
     },
     {
+        id: "godmother",
+        name: "Godmother"
+    },
+    {
         id: "guider_aither",
         name: "Guider Aither"
     },
