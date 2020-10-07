@@ -296,6 +296,10 @@ const HEROES = [
         name: "Elphelt Valentine"
     },
     {
+        id: "ervalen",
+        name: "Ervalen"
+    },
+    {
         id: "faithless_lidica",
         name: "Faithless Lidica"
     },
