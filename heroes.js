@@ -16,6 +16,10 @@ const HEROES = [
         name: "Ains"
     },
     {
+        id: "ainos",
+        name: "Ainos"
+    },
+    {
         id: "aither",
         name: "Aither"
     },
@@ -332,6 +336,10 @@ const HEROES = [
         name: "Giga-Phantasma"
     },
     {
+        id: "glenn",
+        name: "Glenn"
+    },
+    {
         id: "gloomyrain",
         name: "Gloomyrain"
     },
@@ -370,6 +378,10 @@ const HEROES = [
     {
         id: "hurado",
         name: "Hurado"
+    },
+    {
+        id: "ian",
+        name: "Ian"
     },
     {
         id: "iseria",
@@ -682,6 +694,10 @@ const HEROES = [
     {
         id: "sol",
         name: "Sol"
+    },
+    {
+        id: "sonia",
+        name: "Sonia"
     },
     {
         id: "specimen_sez",
