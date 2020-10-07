@@ -260,6 +260,10 @@ const ARTIFACTS = [
         name: "Labyrinth Cube",
     },
     {
+        id: "last_teatime",
+        name: "Last Teatime",
+    },
+    {
         id: "love_potion",
         name: "Love Potion",
     },
