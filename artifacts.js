@@ -148,6 +148,10 @@ const ARTIFACTS = [
         name: "Doctor's Bag",
     },
     {
+        id: "double_edged_decrescent",
+        name: "Double-edged Decrescent",
+    },
+    {
         id: "draco_plate",
         name: "Draco Plate",
     },
