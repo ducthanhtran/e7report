@@ -748,6 +748,10 @@ const HEROES = [
         name: "Tieria"
     },
     {
+        id: "top_model_luluca",
+        name: "Top Model Luluca"
+    },
+    {
         id: "troublemaker_crozet",
         name: "Troublemaker Crozet"
     },
