@@ -508,6 +508,10 @@ const HEROES = [
         name: "Luna"
     },
     {
+        id: "magic_scholar_doris",
+        name: "Magic Scholar Doris"
+    },
+    {
         id: "maid_chloe",
         name: "Maid Chloe"
     },

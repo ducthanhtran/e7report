@@ -515,6 +515,18 @@ const ARTIFACTS = [
         id: "wondrous_potion_vial",
         name: "Wondrous Potion Vial",
     },
+    {
+        id: "xiii_death",
+        name: "XIII. Death"
+    },
+    {
+        id: "xvi_the_tower",
+        name: "XVI. The Tower",
+    },
+    {
+        id: "xviii_the_moon",
+        name: "XVIII. The Moon"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
