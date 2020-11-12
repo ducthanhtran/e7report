@@ -136,6 +136,10 @@ const ARTIFACTS = [
         name: "Daydream Joker",
     },
     {
+        id: "days_of_destiny",
+        name: "Days of Destiny"
+    },
+    {
         id: "devils_brand",
         name: "Devil's Brand",
     },
@@ -448,6 +452,10 @@ const ARTIFACTS = [
         name: "Sword of Judgment",
     },
     {
+        id: "sword_of_summer_twilight",
+        name: "Sword of Summer Twilight"
+    },
+    {
         id: "sword_of_the_morning",
         name: "Sword of the Morning",
     },
@@ -490,6 +498,10 @@ const ARTIFACTS = [
     {
         id: "unfading_memories",
         name: "Unfading Memories"
+    },
+    {
+        id: "unseen_observer",
+        name: "Unseen Observer"
     },
     {
         id: "victorious_flag",
