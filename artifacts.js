@@ -1,5 +1,9 @@
 const ARTIFACTS = [
     {
+        id: "a_symbol_of_unity",
+        name: "A Symbol of Unity"
+    },
+    {
         id: "abyssal_crown",
         name: "Abyssal Crown",
     },
@@ -26,6 +30,10 @@ const ARTIFACTS = [
     {
         id: "ambrote",
         name: "Ambrote",
+    },
+    {
+        id: "ancient_dragons_legacy",
+        name: "Ancient Dragon's Legacy",
     },
     {
         id: "ancient_sheath",
