@@ -560,6 +560,10 @@ const HEROES = [
         name: "Montmorancy"
     },
     {
+        id: "mort",
+        name: "Mort",
+    },
+    {
         id: "mucacha",
         name: "Mucacha"
     },
@@ -574,6 +578,10 @@ const HEROES = [
     {
         id: "otillie",
         name: "Otillie"
+    },
+    {
+        id: "operator_sigret",
+        name: "Operator Sigret",
     },
     {
         id: "pavel",
