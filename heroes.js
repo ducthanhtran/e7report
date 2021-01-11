@@ -55,10 +55,10 @@ const HEROES = [
         id: "aramintha",
         name: "Aramintha"
     },
-	{
-		id: "archdemons_shadow",
-		name: "Archdemon's Shadow"
-	},
+    {
+        id: "archdemons_shadow",
+        name: "Archdemon's Shadow"
+    },
     {
         id: "arbiter_vildred",
         name: "Arbiter Vildred"
@@ -307,10 +307,10 @@ const HEROES = [
         id: "ervalen",
         name: "Ervalen"
     },
-	{
-		id: "fairytale_tenebria",
-		name: "Fairytale Tenebria"
-	},
+    {
+        id: "fairytale_tenebria",
+        name: "Fairytale Tenebria"
+    },
     {
         id: "faithless_lidica",
         name: "Faithless Lidica"
