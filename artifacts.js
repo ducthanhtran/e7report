@@ -207,6 +207,10 @@ const ARTIFACTS = [
         id: "exorcists_tonfa",
         name: "Exorcist's Tonfa",
     },
+	{
+		id: "fairy_tale_for_a_nightmare",
+		name: "Fairy Tale for a Nightmare",
+	},
     {
         id: "flower_shower",
         name: "Flower Shower",
@@ -479,6 +483,10 @@ const ARTIFACTS = [
         id: "tear_of_the_desert",
         name: "Tear of the Desert",
     },
+	{
+		id: "the_guardian_stars_blessing",
+		name: "The Guarian Star's Blessing",
+	},
     {
         id: "time_matter",
         name: "Time Matter",
