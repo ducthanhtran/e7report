@@ -485,7 +485,7 @@ const ARTIFACTS = [
     },
     {
         id: "the_guardian_stars_blessing",
-        name: "The Guarian Star's Blessing",
+        name: "The Guardian Star's Blessing",
     },
     {
         id: "time_matter",
