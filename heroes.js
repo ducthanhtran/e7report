@@ -303,6 +303,10 @@ const HEROES = [
         id: "ervalen",
         name: "Ervalen"
     },
+	{
+		id: "fairytale_tenebria",
+		name: "Fairytale Tenebria"
+	},
     {
         id: "faithless_lidica",
         name: "Faithless Lidica"
