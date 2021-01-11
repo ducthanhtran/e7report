@@ -55,6 +55,10 @@ const HEROES = [
         id: "aramintha",
         name: "Aramintha"
     },
+	{
+		id: "archdemons_shadow",
+		name: "Archdemon's Shadow"
+	},
     {
         id: "arbiter_vildred",
         name: "Arbiter Vildred"
@@ -811,6 +815,10 @@ const HEROES = [
         id: "yuna",
         name: "Yuna"
     },
+	{
+		id: "zealot_carmainerose",
+		name: "Zealot Carmainerose"
+	},
     {
         id: "zeno",
         name: "Zeno"
