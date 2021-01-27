@@ -276,6 +276,10 @@ const ARTIFACTS = [
         name: "Kal'adra",
     },
     {
+        id: "knowledge_seed",
+        name "Knowledge Seed",
+    },
+    {
         id: "labyrinth_cube",
         name: "Labyrinth Cube",
     },

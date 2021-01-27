@@ -600,6 +600,10 @@ const HEROES = [
         name: "Pearlhorizon"
     },
     {
+        id: "politis",
+        name "Politis"
+    },
+    {
         id: "purrgis",
         name: "Purrgis"
     },
