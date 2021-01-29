@@ -601,7 +601,7 @@ const HEROES = [
     },
     {
         id: "politis",
-        name "Politis"
+        name: "Politis"
     },
     {
         id: "purrgis",

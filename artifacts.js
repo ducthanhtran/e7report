@@ -277,7 +277,7 @@ const ARTIFACTS = [
     },
     {
         id: "knowledge_seed",
-        name "Knowledge Seed",
+        name: "Knowledge Seed",
     },
     {
         id: "labyrinth_cube",
