@@ -292,6 +292,10 @@ const HEROES = [
         name: "Eaton"
     },
     {
+        id: "eda",
+        name: "Eda"
+    },
+    {
         id: "elena",
         name: "Elena"
     },

@@ -512,6 +512,10 @@ const ARTIFACTS = [
         name: "To a New World",
     },
     {
+        id: "twilight_calamity",
+        name: "Twilight Calamity"
+    },
+    {
         id: "uberiuss_tooth",
         name: "Uberius's Tooth",
     },
