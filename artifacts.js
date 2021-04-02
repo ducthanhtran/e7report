@@ -552,6 +552,10 @@ const ARTIFACTS = [
         name: "XIII. Death"
     },
     {
+        id: "xiv_temperance",
+        name: "XIV. Temperance"
+    },
+    {
         id: "xvi_the_tower",
         name: "XVI. The Tower",
     },
