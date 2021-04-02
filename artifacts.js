@@ -544,6 +544,10 @@ const ARTIFACTS = [
         name: "Wall of Order",
     },
     {
+        id: "war_horn",
+        name: "War Horn"
+    },
+    {
         id: "waters_origin",
         name: "Water's Origin",
     },
