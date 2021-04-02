@@ -428,6 +428,10 @@ const HEROES = [
         name: "Judith"
     },
     {
+        id: "kanna",
+        name: "Kanna"
+    },
+    {
         id: "karin",
         name: "Karin"
     },
