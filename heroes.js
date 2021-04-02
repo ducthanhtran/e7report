@@ -368,6 +368,10 @@ const HEROES = [
         name: "Godmother"
     },
     {
+        id: "great_chief_khawana",
+        name: "Great Chief Khawana"
+    },
+    {
         id: "guider_aither",
         name: "Guider Aither"
     },
