@@ -132,6 +132,10 @@ const HEROES = [
         name: "Blood Moon Haste"
     },
     {
+        id: "bomb_model_kanna",
+        name: "Bomb Model Kanna"
+    },
+    {
         id: "briar_witch_iseria",
         name: "Briar Witch Iseria",
     },
@@ -426,10 +430,6 @@ const HEROES = [
     {
         id: "judith",
         name: "Judith"
-    },
-    {
-        id: "kanna",
-        name: "Kanna"
     },
     {
         id: "karin",

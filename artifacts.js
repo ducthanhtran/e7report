@@ -12,6 +12,10 @@ const ARTIFACTS = [
         name: "Adamant Shield",
     },
     {
+        id: "air_to_surface_misha",
+        name: "Air-to-Surface: MISHA"
+    },
+    {
         id: "alabastron",
         name: "Alabastron"
     },
