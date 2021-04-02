@@ -256,6 +256,10 @@ const HEROES = [
         name: "Desert Jewel Basar"
     },
     {
+        id: "designer_lilibet",
+        name: "Designer Lilibet"
+    },
+    {
         id: "destina",
         name: "Destina"
     },
