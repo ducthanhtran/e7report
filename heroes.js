@@ -748,6 +748,10 @@ const HEROES = [
         name: "Sol"
     },
     {
+        id: "solitaria_of_the_snow",
+        name: "Solitaria of the Snow",
+    },
+    {
         id: "sonia",
         name: "Sonia"
     },
