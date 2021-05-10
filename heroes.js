@@ -712,6 +712,10 @@ const HEROES = [
         name: "Seaside Bellona"
     },
     {
+        id: "senya",
+        name: "Senya"
+    },
+    {
         id: "serila",
         name: "Serila"
     },

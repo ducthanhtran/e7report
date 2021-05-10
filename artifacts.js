@@ -444,6 +444,10 @@ const ARTIFACTS = [
         name: "Song of Stars",
     },
     {
+        id: "spear_of_a_new_dawn",
+        Name: "Spear of a New Dawn",
+    },
+    {
         id: "spirits_breath",
         name: "Spirit's Breath",
     },
