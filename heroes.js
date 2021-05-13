@@ -560,6 +560,10 @@ const HEROES = [
         name: "Maya"
     },
     {
+        id: "mediator_kawerik",
+        name: "Mediator Kawerik"
+    },
+    {
         id: "mega_phantasma",
         name: "Mega-Phantasma"
     },
