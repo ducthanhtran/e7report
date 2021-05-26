@@ -560,6 +560,10 @@ const ARTIFACTS = [
         name: "Wind Rider",
     },
     {
+        id: "wings_of_light_and_shadow",
+        name: "Wings of Light and Shadow"
+    },
+    {
         id: "wondrous_potion_vial",
         name: "Wondrous Potion Vial",
     },

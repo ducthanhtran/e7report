@@ -412,6 +412,14 @@ const HEROES = [
         name: "Ian"
     },
     {
+        id: "ilynav",
+        name: "Ilynav"
+    },
+    {
+        id: "inferno_khawazu",
+        name: "Inferno Khawazu"
+    },
+    {
         id: "iseria",
         name: "Iseria"
     },
