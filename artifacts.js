@@ -236,6 +236,10 @@ const ARTIFACTS = [
         name: "Grail of Blood",
     },
     {
+        id: "guide_to_a_decision",
+        name: "Guide to a Decision",
+    },
+    {
         id: "guiding_light",
         name: "Guiding Light"
     },
