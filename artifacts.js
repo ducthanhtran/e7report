@@ -456,6 +456,10 @@ const ARTIFACTS = [
         name: "Spooky Solayu Stories",
     },
     {
+        id: "spear_of_a_new_dawn",
+        name: "Spear of a New Dawn",
+    },
+    {
         id: "steadfast_gatekeeper",
         name: "Steadfast Gatekeeper"
     },
