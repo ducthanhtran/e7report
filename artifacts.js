@@ -64,6 +64,10 @@ const ARTIFACTS = [
         name: "Aurius",
     },
     {
+        id: "azure_comet",
+        name: "Azure Comet",
+    },
+    {
         id: "a_little_queens_huge_crown",
         name: "A Little Queen's Huge Crown"
     },
@@ -234,6 +238,10 @@ const ARTIFACTS = [
     {
         id: "grail_of_blood",
         name: "Grail of Blood",
+    },
+    {
+        id: "guardian_ice_crystals",
+        name: "Guardian Ice Crystals",
     },
     {
         id: "guide_to_a_decision",
@@ -470,6 +478,10 @@ const ARTIFACTS = [
     {
         id: "strak_gauntlet",
         name: "Strak Gauntlet",
+    },
+    {
+        id: "severed_horn_wand",
+        name: "Severed Horn Wand",
     },
     {
         id: "sword_of_ezera",

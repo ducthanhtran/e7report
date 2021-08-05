@@ -144,6 +144,10 @@ const HEROES = [
         name: "Butcher Corps Inquisitor"
     },
     {
+        id: "camilia",
+        name: "Camilia"
+    },
+    {
         id: "captain_rikoris",
         name: "Captain Rikoris"
     },
@@ -216,6 +220,10 @@ const HEROES = [
         name: "Choux",
     },
     {
+        id: "christy",
+        name: "Christy",
+    },
+    {
         id: "church_of_ilryos_axe",
         name: "Church of Ilryos Axe"
     },
@@ -226,6 +234,10 @@ const HEROES = [
     {
         id: "clarissa",
         name: "Clarissa"
+    },
+    {
+        id: "closer_charles",
+        name: "Closer Charles",
     },
     {
         id: "coli",
@@ -316,6 +328,10 @@ const HEROES = [
         name: "Elphelt Valentine"
     },
     {
+        id: "emilia",
+        name: "Emilia"
+    },
+    {
         id: "ervalen",
         name: "Ervalen"
     },
@@ -394,6 +410,10 @@ const HEROES = [
     {
         id: "hazel",
         name: "Hazel"
+    },
+    {
+        id: "helen",
+        name: "Helen",
     },
     {
         id: "helga",
@@ -576,6 +596,10 @@ const HEROES = [
         name: "Mega-Phantasma"
     },
     {
+        id: "melany",
+        name: "Melany"
+    },
+    {
         id: "melissa",
         name: "Melissa"
     },
@@ -636,6 +660,10 @@ const HEROES = [
         name: "Pearlhorizon"
     },
     {
+        id: "penelope",
+        name: "Penelope",
+    },
+    {
         id: "politis",
         name: "Politis"
     },
@@ -662,6 +690,14 @@ const HEROES = [
     {
         id: "remnant_violet",
         name: "Remnant Violet",
+    },
+    {
+        id: "ram",
+        name: "Ram",
+    },
+    {
+        id: "rem",
+        name: "Rem",
     },
     {
         id: "requiemroar",
