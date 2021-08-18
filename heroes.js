@@ -40,6 +40,10 @@ const HEROES = [
         name: "Ambitious Tywin"
     },
     {
+        id: "angel_of_light_angelica",
+        name: "Angel of Light Angelica",
+    },
+    {
         id: "angelic_montmorancy",
         name: "Angelic Montmorancy"
     },
@@ -818,6 +822,10 @@ const HEROES = [
     {
         id: "straze",
         name: "Straze"
+    },
+    {
+        id: "summertime_iseria",
+        name: "Summertime Iseria",
     },
     {
         id: "surin",

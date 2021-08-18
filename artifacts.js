@@ -352,6 +352,10 @@ const ARTIFACTS = [
         name: "Oath Key",
     },
     {
+        id: "official_levulin_beach_volleyball",
+        name: "Official Levulin Beach Volleyball",
+    },
+    {
         id: "one_year_of_gratitude",
         name: "One Year of Gratitude",
     },
@@ -466,6 +470,10 @@ const ARTIFACTS = [
     {
         id: "spooky_solayu_stories",
         name: "Spooky Solayu Stories",
+    },
+    {
+        id: "star_of_the_deep_sea",
+        name: "Star of the Deep Sea",
     },
     {
         id: "steadfast_gatekeeper",
