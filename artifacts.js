@@ -392,6 +392,10 @@ const ARTIFACTS = [
         name: "Reingar's Special Drink",
     },
     {
+        id: "records_of_unity",
+        name: "Records of Unity",
+    },
+    {
         id: "rhianna_and_luciella",
         name: "Rhianna & Luciella",
     },
