@@ -328,6 +328,10 @@ const ARTIFACTS = [
         name: "Mighty Yaksha",
     },
     {
+        id: "magic_for_friends",
+        name: "Magic for Friends"
+    },
+    {
         id: "moonlight_dreamblade",
         name: "Moonlight Dreamblade",
     },
