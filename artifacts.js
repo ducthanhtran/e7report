@@ -615,6 +615,14 @@ const ARTIFACTS = [
         id: "xviii_the_moon",
         name: "XVIII. The Moon"
     },
+    {
+        id: "sword_of_winter_shadow",
+        name: "Sword of Winter Shadow"
+    },
+    {
+        id: "blazing_full_moon_trophy",
+        name: "Blazing Full Moon Trophy"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 

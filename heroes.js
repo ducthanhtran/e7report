@@ -919,6 +919,14 @@ const HEROES = [
         id: "zerato",
         name: "Zerato"
     },
+    {
+        id: "belian",
+        name: "Belian"
+    },
+    {
+        id: "ran",
+        name: "Ran"
+    },
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
