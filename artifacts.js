@@ -469,7 +469,7 @@ const ARTIFACTS = [
     },
     {
         id: "spear_of_a_new_dawn",
-        Name: "Spear of a New Dawn",
+        name: "Spear of a New Dawn",
     },
     {
         id: "spirits_breath",
