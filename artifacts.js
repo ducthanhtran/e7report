@@ -623,6 +623,18 @@ const ARTIFACTS = [
         id: "blazing_full_moon_trophy",
         name: "Blazing Full Moon Trophy"
     },
+    {
+        id: "anti_magic_mask",
+        name: "Anti-Magic Mask"
+    },
+    {
+        id: "upgraded_dragon_knuckles",
+        name: "Upgraded Dragon Knuckles"
+    },
+    {
+        id: "flawless_garments",
+        name: "Flawless Garments"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 

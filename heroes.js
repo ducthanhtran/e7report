@@ -927,6 +927,22 @@ const HEROES = [
         id: "ran",
         name: "Ran"
     },
+    {
+        id: "rimuru",
+        name: "Rimuru"
+    },
+    {
+        id: "milim",
+        name: "Milim"
+    },
+    {
+        id: "shuna",
+        name: "Shuna"
+    },
+    {
+        id: "spirit_eye_celine",
+        name: "Spirit Eye Celine"
+    },
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
