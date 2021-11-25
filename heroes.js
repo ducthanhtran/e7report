@@ -944,6 +944,14 @@ const HEROES = [
         name: "Spirit Eye Celine"
     },
     {
+        id: "adin",
+        name: "Adin"
+    },
+    {
+        id: "shadow_knight_pyllis",
+        name: "Shadow Knight Pyllis"
+    },
+    {
         id: "zahhak",
         name: "Zahhak"
     },
