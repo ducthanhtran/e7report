@@ -635,6 +635,14 @@ const ARTIFACTS = [
         id: "flawless_garments",
         name: "Flawless Garments"
     },
+    {
+        id: "bastion_of_hope",
+        name: "Bastion of Hope"
+    },
+    {
+        id: "pure_white_trust",
+        name: "Pure White Trust"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 

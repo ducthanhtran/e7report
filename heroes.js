@@ -943,6 +943,10 @@ const HEROES = [
         id: "spirit_eye_celine",
         name: "Spirit Eye Celine"
     },
+    {
+        id: "zahhak",
+        name: "Zahhak"
+    },
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
