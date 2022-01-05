@@ -955,6 +955,34 @@ const HEROES = [
         id: "zahhak",
         name: "Zahhak"
     },
+    {
+        id: "conqueror_lilias",
+        name: "Conqueror Lilias"
+    },
+    {
+        id: "command_model_laika",
+        name: "Command Model Laika"
+    },
+    {
+        id: "yoonryoung",
+        name: "Yoonryoung"
+    },
+    {
+        id: "januta",
+        name: "Januta"
+    },
+    {
+        id: "muwi",
+        name: "Muwi"
+    },
+    {
+        id: "orte",
+        name: "Orte"
+    },
+    {
+        id: "hasol",
+        name: "Hasol"
+    },
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
