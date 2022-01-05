@@ -643,6 +643,18 @@ const ARTIFACTS = [
         id: "pure_white_trust",
         name: "Pure White Trust"
     },
+    {
+        id: "glo_wings_21",
+        name: "Glo-Wings 21"
+    },
+    {
+        id: "brilliant_confidence",
+        name: "Brilliant Confidence"
+    },
+    {
+        id: "nostalgic_music_box",
+        name: "Nostalgic Music Box"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
