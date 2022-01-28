@@ -655,6 +655,10 @@ const ARTIFACTS = [
         id: "nostalgic_music_box",
         name: "Nostalgic Music Box"
     },
+    {
+        id: "goblet_of_oath",
+        name: "Goblet of Oath"
+    }
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
