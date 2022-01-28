@@ -983,6 +983,14 @@ const HEROES = [
         id: "hasol",
         name: "Hasol"
     },
+    {
+        id: "peira",
+        name: "Peira"
+    },
+    {
+        id: "lionheart_cermia",
+        name: "Lionheart Cermia"
+    },
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
