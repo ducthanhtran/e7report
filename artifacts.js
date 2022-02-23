@@ -658,7 +658,11 @@ const ARTIFACTS = [
     {
         id: "goblet_of_oath",
         name: "Goblet of Oath"
-    }
+    },
+    {
+        id: "indestructible_gaiters",
+        name: "Indestructible Gaiters"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
