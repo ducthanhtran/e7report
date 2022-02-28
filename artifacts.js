@@ -663,6 +663,14 @@ const ARTIFACTS = [
         id: "indestructible_gaiters",
         name: "Indestructible Gaiters"
     },
+    {
+        id: "iv._the_emperor",
+        name: "IV. The Emperor"
+    },
+    {
+        id: "iii._the_empress",
+        name: "III. The Empress"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
