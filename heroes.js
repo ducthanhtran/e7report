@@ -999,6 +999,22 @@ const HEROES = [
         id: "bad_cat_armin",
         name: "Bad Cat Armin"
     },
+    {
+        id: "vigilante_leader_glenn",
+        name: "Vigilante Leader Glenn"
+    },
+    {
+        id: "verdant_adin",
+        name: "Verdant Adin"
+    },
+    {
+        id: "aria",
+        name: "Aria"
+    },
+    {
+        id: "jacko",
+        name: "Jack-O'"
+    }
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 

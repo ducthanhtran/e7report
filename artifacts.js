@@ -671,6 +671,14 @@ const ARTIFACTS = [
         id: "iii._the_empress",
         name: "III. The Empress"
     },
+    {
+        id: "jacko_symbol",
+        name: "Jack-O's Symbol"
+    },
+    {
+        id: "scroll_of_shadows",
+        name: "Scroll of Shadows"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 
