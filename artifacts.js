@@ -679,6 +679,10 @@ const ARTIFACTS = [
         id: "scroll_of_shadows",
         name: "Scroll of Shadows"
     },
+    {
+        id: "spear_of_purification",
+        name: "Spear of Purification"
+    },
 ];
 ARTIFACTS.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
 

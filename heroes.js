@@ -1014,6 +1014,10 @@ const HEROES = [
     {
         id: "jacko",
         name: "Jack-O'"
+    },
+    {
+        id: "taeyou",
+        name: "Taeyou"
     }
 ];
 HEROES.sort(function(a, b){ return ('' + a.name).localeCompare(b.name); });
